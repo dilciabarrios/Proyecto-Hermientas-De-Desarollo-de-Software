@@ -10,6 +10,10 @@ def cargar_datos():
 def crear_histograma(data, columna):
     return px.histogram(data, x=columna)
 
+# Función para crear gráfico de dispersión
+def crear_dispersion(data, columna_x, columna_y):
+    return px.scatter(data, x=columna_x, y=columna_y)
+
 # Mostrar título y encabezado en Streamlit
 st.title("Análisis de vehículos")  # Título principal
 st.header("Histograma de Odometer")  # Encabezado secundario
