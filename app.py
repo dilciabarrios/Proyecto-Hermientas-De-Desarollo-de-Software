@@ -16,7 +16,6 @@ def crear_dispersion(data, columna_x, columna_y):
 
 # Mostrar título y encabezado en Streamlit
 st.title("Análisis de vehículos")  # Título principal
-st.header("Histograma de Odometer")  # Encabezado secundario
 
 # Cargar los datos
 car_data = cargar_datos()
@@ -30,7 +29,7 @@ hist_button = st.button('Construir histograma')
 
 if hist_button:
     # Mostrar un mensaje
-    st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches')
+    st.write('Creación de un histograma para el conjunto de datos')
     
     # Crear y mostrar el histograma
     fig = crear_histograma(car_data, "odometer")
