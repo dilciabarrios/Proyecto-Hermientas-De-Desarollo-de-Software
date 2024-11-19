@@ -1,6 +1,10 @@
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+import warnings
+
+# Suprimir todas las advertencias
+warnings.filterwarnings("ignore")
 
 # Función para cargar los datos
 def cargar_datos():
