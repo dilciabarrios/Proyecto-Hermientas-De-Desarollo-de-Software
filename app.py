@@ -50,3 +50,10 @@ if scatter_button:
     # Crear y mostrar el gráfico de dispersión
     fig_scatter = crear_dispersion(car_data, "odometer", "price")
     st.plotly_chart(fig_scatter, use_container_width=True)
+    
+# Pie de página
+st.markdown("---")  # Línea divisoria
+st.markdown(
+    "<p style='text-align: center; font-size: 12px;'>Creado por Dilcia Barrios</p>",
+    unsafe_allow_html=True,
+)
